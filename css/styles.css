@@ -757,3 +757,7 @@ a {
     font-size: 0.8rem;
   }
 }
+img.logo {
+    width: 5px; /* Tamanho desejado */
+    height: auto; /* Mantém a proporção da imagem */
+}
