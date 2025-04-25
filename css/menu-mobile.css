@@ -19,28 +19,23 @@
         z-index: 100;
     }
 
-    [data-menu="button"]::before {
+    [data-menu="button"]::before,
+    [data-menu="button"]::after {
         content: '';
         display: block;
         position: absolute;
-        bottom: 0;
-        left: 0;
         height: 3px;
         width: 100%;
         background-color: #00d2df;
         transition: .3s transform;
     }
 
+    [data-menu="button"]::before {
+        top: 0;
+    }
+
     [data-menu="button"]::after {
-        content: '';
-        display: block;
-        position: absolute;
-        bottom: 50%;
-        left: 0;
-        height: 3px;
-        width: 100%;
-        background-color: #00d2df;
-        transition: .3s transform;
+        bottom: 0;
     }
 
     /* Menu */
@@ -69,5 +64,16 @@
         background-color: #151515; /* Garanta que o fundo da página também não seja branco */
         margin: 0;
         padding: 0;
+    }
+}
+
+@keyframes show-down {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
