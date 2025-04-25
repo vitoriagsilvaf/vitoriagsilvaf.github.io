@@ -757,8 +757,8 @@ a {
     font-size: 0.8rem;
   }
 }
-header img {
-  width: 100px; /* Tamanho padrão da logo */
-  height: auto; /* Mantém a proporção da logo */
-  transition: width 0.3s ease-in-out; /* Transição suave ao alterar o tamanho */
+.logo {
+  width: 120px;
+  height: auto;
 }
+
