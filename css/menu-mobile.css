@@ -19,23 +19,28 @@
         z-index: 100;
     }
 
-    [data-menu="button"]::before,
-    [data-menu="button"]::after {
+    [data-menu="button"]::before {
         content: '';
         display: block;
         position: absolute;
+        bottom: 0;
+        left: 0;
         height: 3px;
         width: 100%;
         background-color: #00d2df;
         transition: .3s transform;
     }
 
-    [data-menu="button"]::before {
-        top: 0;
-    }
-
     [data-menu="button"]::after {
-        bottom: 0;
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 50%;
+        left: 0;
+        height: 3px;
+        width: 100%;
+        background-color: #00d2df;
+        transition: .3s transform;
     }
 
     /* Menu */
@@ -59,21 +64,20 @@
         letter-spacing: 2px;
     }
 
-    /* Remover qualquer fundo branco extra */
+    /* Garantir que o fundo da página também não seja branco */
     body, html {
-        background-color: #151515; /* Garanta que o fundo da página também não seja branco */
         margin: 0;
         padding: 0;
+        background-color: #151515; /* Cor de fundo escura para o corpo da página */
+        color: orange; /* Cor do texto */
+        font-family: "Inter", sans-serif; /* Fonte */
+        letter-spacing: 1px; /* Espaçamento entre as letras */
+        height: 100%; /* Garantir que a altura ocupe 100% da tela */
+        width: 100%; /* Garantir que a largura ocupe 100% da tela */
     }
-}
 
-@keyframes show-down {
-    from {
-        opacity: 0;
-        transform: translateY(-10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
+    /* Para garantir que o box-sizing seja aplicado corretamente */
+    * {
+        box-sizing: border-box; /* Inclui bordas e preenchimento no cálculo de largura e altura */
     }
 }
