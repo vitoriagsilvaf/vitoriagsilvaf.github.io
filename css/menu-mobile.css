@@ -1,4 +1,10 @@
+/* Menu */
+[data-menu="button"] {
+  display: none;
+}
+
 @media (max-width: 768px) {
+  /* Estilos do menu */
   body {
     background-color: #121212;
     color: #ffffff;
@@ -9,39 +15,38 @@
     color: white;
   }
 
-  nav a {
-    color: white;
-  }
-
-  nav a:hover {
-    color: #00d2df;
-  }
-
   [data-menu="button"] {
-    background-color: #1c1c1c;
-    color: white;
+    display: block;
+    background-color: transparent;
     border: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
   }
 
   [data-menu="list"] {
+    display: none;
+    flex-direction: column;
+    width: 100%;
     background-color: #1c1c1c;
+    padding: 0;
+  }
+
+  [data-menu="list"].active {
+    display: flex;
   }
 
   [data-menu="list"] a {
+    padding: 10px;
     color: white;
+    text-decoration: none;
   }
 
   [data-menu="list"] a:hover {
     background-color: #292929;
   }
 
-  section,
-  header,
-  footer {
-    background-color: #1a1a1a;
-  }
-
-  h1, h2, h3, p, span, li {
+  nav a {
     color: white;
   }
 
@@ -63,38 +68,10 @@
     color: black;
   }
 
-  .projetos__card {
-    background-color: #1f1f1f;
-    padding: 1rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-  }
-
-  .projeto-img {
-    border-radius: 10px;
-    max-width: 100%;
-  }
-
   footer {
     background-color: #121212;
     color: white;
     text-align: center;
     padding: 1rem;
-  }
-
-  .scroll p {
-    color: white;
-  }
-
-  .experiencia__lugares ul li {
-    background-color: #1f1f1f;
-    color: white;
-    padding: 10px;
-    cursor: pointer;
-    border-bottom: 1px solid #333;
-  }
-
-  .experiencia__lugares ul li:hover {
-    background-color: #292929;
   }
 }
