@@ -9,7 +9,7 @@
 
     [data-menu="button"] {
         display: block;
-        background-color: #151515;
+        background-color: #151515; /* Cor do fundo do botão */
         border: none;
         border-top: 3px #00d2df solid;
         padding: .8rem 1rem;
@@ -43,18 +43,14 @@
         transition: .3s transform;
     }
 
-    
-
-   
-
+    /* Menu */
     [data-menu="list"] {
         display: none;
         position: absolute;
         top: 0;
         right: 1%;
-        box-shadow: 0 4px 4px rgba(0,0,0,.3);
-        background-color: #151515;
-        
+        box-shadow: 0 4px 4px rgba(0, 0, 0, .3);
+        background-color: #151515; /* Cor do fundo do menu */
         padding: 82px 0 10px;
         z-index: 50;
         margin: 0;
@@ -66,5 +62,12 @@
         animation: show-down .3s forwards;
         text-transform: uppercase;
         letter-spacing: 2px;
+    }
+
+    /* Remover qualquer fundo branco extra */
+    body, html {
+        background-color: #151515; /* Garanta que o fundo da página também não seja branco */
+        margin: 0;
+        padding: 0;
     }
 }
