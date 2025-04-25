@@ -760,5 +760,6 @@ a {
 .logo {
   width: 700px;
   height: auto;
+  margin-left: -10px;
 }
 
