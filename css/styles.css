@@ -758,8 +758,8 @@ a {
   }
 }
 .logo {
-  width: 700px;
-  height: auto;
-  margin-left: -200px;
+  width: 650px; /* Tamanho da imagem */
+  height: auto; /* Mantém a proporção da imagem */
+  margin-left: -100px; /* Move a imagem 200px para a esquerda */
+  position: relative; /* Relativo para movimentação */
 }
-
