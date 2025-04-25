@@ -758,7 +758,7 @@ a {
   }
 }
 .logo {
-  width: 550px; /* Tamanho da imagem */
+  width: 510px; /* Tamanho da imagem */
   height: auto; /* Mantém a proporção da imagem */
   transform: translateX(-100px); /* Move 200px para a esquerda */
 }
