@@ -100,6 +100,6 @@
 
   /* Espaço entre os botões Currículo e E-mail */
   .sobre-mim__descricao-buttons a {
-    margin-right: 20px; /* Ajuste o valor conforme necessário */
+    margin-right: 15px; /* Ajuste o valor conforme necessário */
   }
 }
