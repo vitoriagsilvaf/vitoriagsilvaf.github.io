@@ -25,10 +25,10 @@ footer {
 }
 
 footer img {
-  width: 7px;
+  width: 14px;
   position: relative;
   top: 2px;
-  margin: 0 1.5px;
+  margin: 0 1.0px;
 }
 
 footer p {
@@ -78,7 +78,7 @@ header {
 }
 
 nav {
-  padding: 0 10%;
+  padding: 0 15%;
   display: flex;
   align-items: center;
   background-color: #151515;
@@ -569,7 +569,7 @@ a {
   .sobre-mim,
   .experiencia,
   .projetos {
-    padding: 22% 15%;
+    padding: 22% 0%;
     text-align: center;
   }
 
