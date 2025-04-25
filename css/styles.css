@@ -36,7 +36,7 @@ footer p {
 }
 
 footer span {
-  color: #00d2df;
+  color: #00df70;
   font-weight: bold;
   transition: .4s;
 }
@@ -105,7 +105,7 @@ nav ul li {
 nav ul li::after {
   content: "";
   display: block;
-  border-bottom: 2px solid #00d2df;
+  border-bottom: 2px solid #00df70;
   margin-top: 5px;
   transform: scaleX(0);
   transition: transform 0.3s ease;
@@ -122,7 +122,7 @@ nav p {
 }
 
 nav p a {
-  color: #00d2df;
+  color: #00df70;
   transition: 0.3s;
 }
 
@@ -398,7 +398,7 @@ a {
 
 .experiencia__lugares ul li.active {
   background-color: #151515;
-  border-left: 2px solid #00d2df;
+  border-left: 2px solid #00df70;
   font-weight: 600;
 }
 
@@ -621,7 +621,7 @@ a {
   .experiencia__lugares ul li.active {
     background-color: #151515;
     border-left: none;
-    border-bottom: 2px solid #00d2df;
+    border-bottom: 2px solid #00df70
     font-weight: 600;
   }
 
