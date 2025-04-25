@@ -97,4 +97,9 @@
   .experiencia__lugares ul li:hover {
     background-color: #292929;
   }
+
+  /* Espaço entre os botões Currículo e E-mail */
+  .sobre-mim__descricao-buttons a {
+    margin-right: 20px; /* Ajuste o valor conforme necessário */
+  }
 }
