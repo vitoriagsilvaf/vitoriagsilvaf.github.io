@@ -1,83 +1,42 @@
-[data-menu="button"] {
-    display: none;
+/* Estilo para os botões */
+button,
+a.button, /* caso esteja usando <a class="button"> */
+.button {
+    background-color: #00d2df;  /* Azul claro para destacar */
+    color: #121212;             /* Texto escuro para contraste */
+    border: none;
+    padding: 0.75rem 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-decoration: none;
 }
 
-@media (max-width: 880px) {
-    nav {
-        padding: 0 5% !important;
-    }
+button:hover,
+a.button:hover,
+.button:hover {
+    background-color: #00a9b4; /* Tom mais escuro no hover */
+    transform: scale(1.05);    /* Efeito sutil de zoom */
+}
 
-    [data-menu="button"] {
-        display: block;
-        background-color: #151515; /* Cor do fundo do botão */
-        border: none;
-        border-top: 3px #00d2df solid;
-        padding: .8rem 1rem;
-        text-transform: uppercase;
-        cursor: pointer;
-        position: relative;
-        z-index: 100;
-    }
+/* Seção de apresentação (ex: "Olá, sou desenvolvedora...") */
+#intro, .intro, .apresentacao {
+    background-color: #151515;  /* Fundo escuro */
+    color: orange;              /* Texto chamativo */
+    padding: 4rem 2rem;
+    text-align: center;
+}
 
-    [data-menu="button"]::before {
-        content: '';
-        display: block;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        height: 3px;
-        width: 100%;
-        background-color: #00d2df;
-        transition: .3s transform;
-    }
+/* Estilo específico para links de ícones (LinkedIn, GitHub) */
+.social-icons a {
+    color: #00d2df;             /* Azul para ícones */
+    font-size: 1.5rem;
+    margin: 0 1rem;
+    transition: color 0.3s;
+}
 
-    [data-menu="button"]::after {
-        content: '';
-        display: block;
-        position: absolute;
-        bottom: 50%;
-        left: 0;
-        height: 3px;
-        width: 100%;
-        background-color: #00d2df;
-        transition: .3s transform;
-    }
-
-    /* Menu */
-    [data-menu="list"] {
-        display: none;
-        position: absolute;
-        top: 0;
-        right: 1%;
-        box-shadow: 0 4px 4px rgba(0, 0, 0, .3);
-        background-color: #151515; /* Cor do fundo do menu */
-        padding: 82px 0 10px;
-        z-index: 50;
-        margin: 0;
-        font-family: "Inter", sans-serif;
-    }
-
-    [data-menu="list"].active {
-        display: block;
-        animation: show-down .3s forwards;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-    }
-
-    /* Garantir que o fundo da página também não seja branco */
-    body, html {
-        margin: 0;
-        padding: 0;
-        background-color: #151515; /* Cor de fundo escura para o corpo da página */
-        color: orange; /* Cor do texto */
-        font-family: "Inter", sans-serif; /* Fonte */
-        letter-spacing: 1px; /* Espaçamento entre as letras */
-        height: 100%; /* Garantir que a altura ocupe 100% da tela */
-        width: 100%; /* Garantir que a largura ocupe 100% da tela */
-    }
-
-    /* Para garantir que o box-sizing seja aplicado corretamente */
-    * {
-        box-sizing: border-box; /* Inclui bordas e preenchimento no cálculo de largura e altura */
-    }
+.social-icons a:hover {
+    color: #00a9b4;             /* Tom mais escuro ao passar o mouse */
 }
