@@ -1,42 +1,220 @@
-/* Estilo para os botões */
-button,
-a.button, /* caso esteja usando <a class="button"> */
-.button {
-    background-color: #00d2df;  /* Azul claro para destacar */
-    color: #121212;             /* Texto escuro para contraste */
-    border: none;
-    padding: 0.75rem 1.5rem;
-    text-transform: uppercase;
-    font-weight: bold;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    text-decoration: none;
+/* ============ RESET ============ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-button:hover,
-a.button:hover,
-.button:hover {
-    background-color: #00a9b4; /* Tom mais escuro no hover */
-    transform: scale(1.05);    /* Efeito sutil de zoom */
+/* ============ FONT ============ */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #121212;
+  color: orange;
 }
 
-/* Seção de apresentação (ex: "Olá, sou desenvolvedora...") */
-#intro, .intro, .apresentacao {
-    background-color: #151515;  /* Fundo escuro */
-    color: orange;              /* Texto chamativo */
-    padding: 4rem 2rem;
-    text-align: center;
+/* ============ HEADER ============ */
+header {
+  background-color: #121212;
+  padding: 1rem 2rem;
 }
 
-/* Estilo específico para links de ícones (LinkedIn, GitHub) */
-.social-icons a {
-    color: #00d2df;             /* Azul para ícones */
-    font-size: 1.5rem;
-    margin: 0 1rem;
-    transition: color 0.3s;
+nav p a {
+  color: orange;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
 }
 
-.social-icons a:hover {
-    color: #00a9b4;             /* Tom mais escuro ao passar o mouse */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav ul li a {
+  color: orange;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* ============ PRINCIPAL / HOME ============ */
+.principal {
+  background-color: #121212;
+  color: orange;
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.principal__left h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.principal__botao {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.principal__botao a div {
+  background-color: #00d2df;
+  color: #121212;
+  padding: 0.8rem 1.2rem;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.principal__botao a div:hover {
+  background-color: #00a9b4;
+  cursor: pointer;
+}
+
+.principal__botao img {
+  width: 20px;
+  height: 20px;
+}
+
+.principal__botao p {
+  margin: 0;
+  color: #121212;
+}
+
+/* ============ LOGO ============ */
+.principal__right img.logo {
+  max-width: 300px;
+  width: 100%;
+  filter: drop-shadow(0 0 10px rgba(0, 210, 223, 0.5));
+}
+
+/* ============ SOBRE MIM ============ */
+.sobre-mim {
+  background-color: #151515;
+  color: orange;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.sobre-mim__descricao {
+  max-width: 600px;
+}
+
+.sobre-mim__descricao h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.sobre-mim__descricao-buttons {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.sobre-mim__descricao-buttons a div {
+  background-color: #00d2df;
+  color: #121212;
+  padding: 0.8rem 1.2rem;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.sobre-mim__descricao-buttons a div:hover {
+  background-color: #00a9b4;
+  cursor: pointer;
+}
+
+.sobre-mim__descricao-buttons img {
+  width: 20px;
+  height: 20px;
+}
+
+.sobre-mim__descricao-buttons p {
+  margin: 0;
+  color: #121212;
+}
+
+/* ============ EXPERIÊNCIA ============ */
+.experiencia {
+  background-color: #121212;
+  padding: 4rem 2rem;
+  color: orange;
+}
+
+.experiencia h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* ============ PROJETOS ============ */
+.projetos {
+  background-color: #151515;
+  color: orange;
+  padding: 4rem 2rem;
+}
+
+.projetos__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.projetos__card {
+  background-color: #1e1e1e;
+  padding: 1rem;
+  border-radius: 10px;
+  max-width: 300px;
+  flex: 1;
+}
+
+.projetos__card img.projeto-img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.projetos__card-button {
+  margin-top: 1rem;
+  background-color: #00d2df;
+  color: #121212;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.projetos__card-button:hover {
+  background-color: #00a9b4;
+  cursor: pointer;
+}
+
+/* ============ FOOTER ============ */
+footer {
+  background-color: #121212;
+  text-align: center;
+  padding: 1rem;
+  color: orange;
+  font-weight: bold;
 }
