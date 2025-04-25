@@ -760,6 +760,6 @@ a {
 .logo {
   width: 500px; /* Tamanho da imagem */
   height: auto; /* Mantém a proporção da imagem */
-  transform: translateX(-150px); /* Move 200px para a esquerda */
+  transform: translateX(-200px); /* Move 200px para a esquerda */
 }
 
