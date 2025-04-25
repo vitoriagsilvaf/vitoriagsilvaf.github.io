@@ -98,14 +98,8 @@
     background-color: #292929;
   }
 
- .sobre-mim__descricao-buttons {
-  display: flex;
-  justify-content: space-between; /* Espaço igual entre os botões */
-  width: 100%;
-}
-
-.sobre-mim__descricao-buttons a {
-  margin: 0 15px; /* Espaçamento igual entre os botões */
-  flex: 1; /* Faz com que os botões se espalhem igualmente */
- }
+  /* Espaço entre os botões Currículo e E-mail */
+  .sobre-mim__descricao-buttons a {
+    margin-right: 20px; /* Ajuste o valor conforme necessário */
+  }
 }
