@@ -1,4 +1,3 @@
-/* 🌙 Dark mode apenas para telas pequenas (mobile) */
 @media (max-width: 768px) {
   body {
     background-color: #121212;
@@ -46,10 +45,8 @@
     color: white;
   }
 
-  .principal__botao-linkedin,
-  .principal__botao-github,
-  .sobre-mim__descricao-buttons-curriculo,
-  .sobre-mim__descricao-buttons-email,
+  .principal__botao a div,
+  .sobre-mim__descricao-buttons a div,
   .projetos__card-button {
     background-color: #292929;
     color: white;
@@ -59,10 +56,8 @@
     transition: background 0.3s, color 0.3s;
   }
 
-  .principal__botao-linkedin:hover,
-  .principal__botao-github:hover,
-  .sobre-mim__descricao-buttons-curriculo:hover,
-  .sobre-mim__descricao-buttons-email:hover,
+  .principal__botao a div:hover,
+  .sobre-mim__descricao-buttons a div:hover,
   .projetos__card-button:hover {
     background-color: #00d2df;
     color: black;
