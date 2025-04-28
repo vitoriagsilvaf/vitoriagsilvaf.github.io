@@ -36,7 +36,7 @@ footer p {
 }
 
 footer span {
-  color: #00d2df;
+  color: #00c57a;
   font-weight: bold;
   transition: .4s;
 }
@@ -105,7 +105,7 @@ nav ul li {
 nav ul li::after {
   content: "";
   display: block;
-  border-bottom: 2px solid #00d2df;
+  border-bottom: 2px solid #00c57a;
   margin-top: 5px;
   transform: scaleX(0);
   transition: transform 0.3s ease;
@@ -370,7 +370,7 @@ a {
 }
 
 .sobre-mim__foto img {
-  border-left: 5px solid #00d2df;
+  border-left: 5px solid #00c57a;
   filter: opacity(55%);
   transition: 0.4s;
   width: 80%;
@@ -398,7 +398,7 @@ a {
 
 .experiencia__lugares ul li.active {
   background-color: #151515;
-  border-left: 2px solid #00d2df;
+  border-left: 2px solid #00c57a;
   font-weight: 600;
 }
 
