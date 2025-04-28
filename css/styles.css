@@ -269,7 +269,7 @@ a {
 .principal__botao-linkedin::before,
 .sobre-mim__descricao-buttons-email::before,
 .projetos__card-button::before {
-  content: "";
+   content: "";
   position: absolute;
   z-index: -1;
   inset: -2px;
@@ -282,7 +282,6 @@ a {
   background-size: 400%;
   animation: move infinite forwards 4s;
 }
-
 
 .principal__botao-linkedin:hover,
 .principal__botao-github:hover,
