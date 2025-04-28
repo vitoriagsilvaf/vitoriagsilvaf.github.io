@@ -769,4 +769,16 @@ a {
     gap: 20px;
     margin-top: 20px;
 }
+/* Fundo interno do modal (onde está o conteúdo) */
+.modal-content {
+    background-color: #1c1c1c; /* Fundo escuro dentro do modal */
+    color: #fff; /* Texto branco para aparecer melhor no fundo escuro */
+    border-radius: 8px;
+    padding: 20px;
+}
+
+/* Fundo de trás do modal (overlay) */
+.modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo ainda mais escuro e mais opaco */
+}
 
