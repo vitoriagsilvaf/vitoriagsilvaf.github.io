@@ -4,7 +4,7 @@ body {
   margin: 0;
   border: 0;
   background-color: #0d0d0d;
-  color: #00ff00;
+  color: white;
   font-family: "Inter", sans-serif;
   letter-spacing: 1px;
 }
@@ -16,7 +16,7 @@ p {
 }
 
 main {
-  color: #00ff00;
+  color: white;
 }
 
 footer {
@@ -36,13 +36,13 @@ footer p {
 }
 
 footer span {
-  color: #00ff00;
+  color: white;
   font-weight: bold;
   transition: .4s;
 }
 
 footer span:hover {
-  color: #66ff66;
+  color: white;
 }
 
 [data-anime="js-scroll"] {
@@ -105,7 +105,7 @@ nav ul li {
 nav ul li::after {
   content: "";
   display: block;
-  border-bottom: 2px solid #00ff00;
+  border-bottom: 2px solid white;
   margin-top: 5px;
   transform: scaleX(0);
   transition: transform 0.3s ease;
@@ -122,7 +122,7 @@ nav p {
 }
 
 nav p a {
-  color: #00ff00;
+  color: white;
   transition: 0.3s;
 }
 
