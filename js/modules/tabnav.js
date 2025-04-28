@@ -6,6 +6,10 @@ export default function initTabNav() {
     tabMenu[1].classList.add("active");
     tabContent[1].classList.add("active");
 
+    // Ativa também a sexta aba
+    tabMenu[5].classList.add("active");
+    tabContent[5].classList.add("active");
+
     function activeTab(index) {
       tabContent.forEach((content) => {
         content.classList.remove("active");
