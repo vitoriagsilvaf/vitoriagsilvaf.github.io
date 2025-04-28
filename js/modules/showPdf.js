@@ -17,3 +17,15 @@ export function showPdf(certificado) {
     pdfFullstack.style.height = '500px'; // Ajuste o tamanho conforme necessário
   }
 }
+
+// Função para adicionar o evento de clique
+document.addEventListener('DOMContentLoaded', function() {
+  const certificados = document.querySelectorAll('.certificado-item');
+  
+  certificados.forEach(certificado => {
+    certificado.addEventListener('click', function() {
+      const tipoCertificado = this.dataset.certificado; // Usa data-attribute para definir o tipo
+      showPdf(tipoCertificado); // Chama a função de mostrar o PDF
+    });
+  });
+});
