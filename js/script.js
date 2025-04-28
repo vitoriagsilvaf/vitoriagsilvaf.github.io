@@ -4,6 +4,8 @@ import initMenuTransition from "./modules/menu-transition.js";
 import initScrollSuave from "./modules/scroll-suave.js";
 import initTabNav from "./modules/tabnav.js";
 import initTyping from "./modules/typing.js";
+import { showPdf } from './modules/showPdf.js';
+
 
 
 
