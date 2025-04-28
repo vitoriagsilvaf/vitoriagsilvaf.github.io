@@ -1,12 +1,19 @@
-function showPdf(pdfId) {
-    // Esconde todos os PDFs
-    document.getElementById('pdf-frontend').classList.remove('show');
-    document.getElementById('pdf-fullstack').classList.remove('show');
-    
-    // Mostra o PDF selecionado
-    if (pdfId === 'frontend') {
-        document.getElementById('pdf-frontend').classList.add('show');
-    } else if (pdfId === 'fullstack') {
-        document.getElementById('pdf-fullstack').classList.add('show');
-    }
+export function showPdf(certificado) {
+  const pdfFrontend = document.getElementById("pdf-frontend");
+  const pdfFullstack = document.getElementById("pdf-fullstack");
+
+  // Inicialmente, esconda todos os PDFs
+  pdfFrontend.style.width = '0';
+  pdfFrontend.style.height = '0';
+  pdfFullstack.style.width = '0';
+  pdfFullstack.style.height = '0';
+
+  // Mostre o PDF correspondente ao certificado clicado
+  if (certificado === 'frontend') {
+    pdfFrontend.style.width = '100%';
+    pdfFrontend.style.height = '500px'; // Ajuste o tamanho conforme necessário
+  } else if (certificado === 'fullstack') {
+    pdfFullstack.style.width = '100%';
+    pdfFullstack.style.height = '500px'; // Ajuste o tamanho conforme necessário
+  }
 }
