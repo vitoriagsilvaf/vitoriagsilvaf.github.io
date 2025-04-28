@@ -770,32 +770,3 @@ a {
     margin-top: 20px;
 }
 
-.certificado-item {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    padding: 15px;
-    border-radius: 8px;
-    text-align: center;
-    cursor: pointer;
-}
-
-.certificado-item h3 {
-    margin-bottom: 10px;
-    font-size: 1.2rem;
-    font-weight: bold;
-}
-
-#pdf-viewer {
-    margin-top: 20px;
-    text-align: center;
-}
-
-#pdf-viewer iframe {
-    display: none;  /* Esconde todos os iframes inicialmente */
-}
-
-#pdf-viewer iframe.show {
-    display: block;  /* Apenas o PDF selecionado será visível */
-    width: 100%;
-    height: 600px;
-}
