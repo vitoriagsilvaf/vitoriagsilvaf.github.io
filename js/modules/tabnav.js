@@ -2,14 +2,15 @@ export default function initTabNav() {
   const tabMenu = document.querySelectorAll("[data-tab='menu'] li");
   const tabContent = document.querySelectorAll("[data-tab='content'] section");
 
-  if (tabMenu.length && tabContent.length) {
-    tabMenu[1].classList.add("active");
-    tabContent[1].classList.add("active");
+ if (tabMenu.length && tabContent.length) {
+    // Ativa a segunda aba
+    tabMenu[1]?.classList.add("active");
+    tabContent[1]?.classList.add("active");
 
     // Ativa também a sexta aba
-    tabMenu[5].classList.add("active");
-    tabContent[5].classList.add("active");
-
+    tabMenu[5]?.classList.add("active");
+    tabContent[5]?.classList.add("active");
+   
     function activeTab(index) {
       tabContent.forEach((content) => {
         content.classList.remove("active");
