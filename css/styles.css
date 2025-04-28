@@ -782,6 +782,7 @@ a {
     background-color: rgba(0, 0, 0, 0.8); /* Fundo ainda mais escuro e mais opaco */
 }
 .certificado-item {
-    margin-bottom: 7px;  /* Espaçamento entre os itens */
+    margin-bottom: 7px;  /* Adiciona um espaçamento vertical entre os certificados */
+    display: flex;
+    align-items: center; /* Alinha o conteúdo verticalmente */
 }
-
