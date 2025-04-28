@@ -126,20 +126,20 @@
               <p class="experiencia__descricao-local">Certificados obtidos ao longo da minha jornada:</p>
 
               <!-- Container para os Certificados -->
-              <div class="certificados-container">
-                <div class="certificado-item" onclick="showPdf('frontend')">
-                  <h3>Frontend Developer</h3>
-                </div>
-                <div class="certificado-item" onclick="showPdf('fullstack')">
-                  <h3>Full Stack Developer</h3>
-                </div>
-              </div>
+            <div class="certificados-container">
+  <div class="certificado-item" data-certificado="frontend">
+    <h3>Frontend Developer</h3>
+  </div>
+  <div class="certificado-item" data-certificado="fullstack">
+    <h3>Full Stack Developer</h3>
+  </div>
+</div>
 
-              <!-- Área de visualização do PDF -->
-              <div id="pdf-viewer">
-                <iframe id="pdf-frontend" src="./assets/FRONTEND DEVELOPER.pdf" width="0" height="0" style="border: none;"></iframe>
-                <iframe id="pdf-fullstack" src="./assets/FULL STACK DEVELOPER.pdf" width="0" height="0" style="border: none;"></iframe>
-              </div>
+<!-- Área de visualização do PDF -->
+<div id="pdf-viewer">
+  <iframe id="pdf-frontend" src="./assets/FRONTEND DEVELOPER.pdf" width="0" height="0" style="border: none;"></iframe>
+  <iframe id="pdf-fullstack" src="./assets/FULL STACK DEVELOPER.pdf" width="0" height="0" style="border: none;"></iframe>
+</div>
             </section>
           </div>
         </div>
