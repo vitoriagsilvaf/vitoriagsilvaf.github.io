@@ -766,23 +766,27 @@ a {
 .certificados-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 7px;
-    margin-top: 20px;
+    gap: 10px; /* Ajustei para 10px de espaço entre os itens */
+    margin-top: 10px; /* Adicionei margem superior de 10px */
 }
-/* Fundo interno do modal (onde está o conteúdo) */
+
+.certificado-item {
+    margin-bottom: 10px;  /* Espaço de 10px entre os itens na coluna */
+    padding: 10px;  /* Padding interno para os itens */
+    background-color: #2c2c2c; /* Cor de fundo (opcional) */
+    border-radius: 8px; /* Bordas arredondadas */
+    display: flex;
+    align-items: center; /* Alinha o conteúdo verticalmente */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para efeito de profundidade */
+}
+
 .modal-content {
     background-color: #1c1c1c; /* Fundo escuro dentro do modal */
-    color: #fff; /* Texto branco para aparecer melhor no fundo escuro */
+    color: #fff; /* Texto branco para melhor contraste */
     border-radius: 8px;
     padding: 20px;
 }
 
-/* Fundo de trás do modal (overlay) */
 .modal-backdrop {
-    background-color: rgba(0, 0, 0, 0.8); /* Fundo ainda mais escuro e mais opaco */
-}
-.certificado-item {
-    margin-bottom: 7px;  /* Adiciona um espaçamento vertical entre os certificados */
-    display: flex;
-    align-items: center; /* Alinha o conteúdo verticalmente */
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo mais escuro e opaco */
 }
