@@ -121,29 +121,29 @@
               unindo lógica, criatividade e boas práticas de desenvolvimento.
             </p>
           </section>
-      <section data-anime="show-right">
-    <h2>Certificados diversos</h2>
-    <p class="experiencia__descricao-local">Certificados obtidos ao longo da minha jornada:</p>
-    
-    <!-- Container para os Certificados -->
-    <div class="certificados-container">
-        <!-- Certificado 1 -->
-        <div class="certificado-item" onclick="showPdf('frontend')">
-            <h3>Frontend Developer</h3>
-        </div>
+    <section data-anime="show-right">
+              <h2>Certificados diversos</h2>
+              <p class="experiencia__descricao-local">Certificados obtidos ao longo da minha jornada:</p>
 
-        <!-- Certificado 2 -->
-        <div class="certificado-item" onclick="showPdf('fullstack')">
-            <h3>Full Stack Developer</h3>
-        </div>
-    </div>
+              <!-- Container para os Certificados -->
+              <div class="certificados-container">
+                <div class="certificado-item" onclick="showPdf('frontend')">
+                  <h3>Frontend Developer</h3>
+                </div>
+                <div class="certificado-item" onclick="showPdf('fullstack')">
+                  <h3>Full Stack Developer</h3>
+                </div>
+              </div>
 
-    <!-- Área de visualização do PDF -->
-    <div id="pdf-viewer">
-        <iframe id="pdf-frontend" src="./assets/FRONTEND DEVELOPER.pdf" width="0" height="0" style="border: none;"></iframe>
-        <iframe id="pdf-fullstack" src="./assets/FULL STACK DEVELOPER.pdf" width="0" height="0" style="border: none;"></iframe>
-    </div>
-</section>
+              <!-- Área de visualização do PDF -->
+              <div id="pdf-viewer">
+                <iframe id="pdf-frontend" src="./assets/FRONTEND DEVELOPER.pdf" width="0" height="0" style="border: none;"></iframe>
+                <iframe id="pdf-fullstack" src="./assets/FULL STACK DEVELOPER.pdf" width="0" height="0" style="border: none;"></iframe>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
 
 
         </div>
@@ -224,5 +224,7 @@
 
     <script src="./js/script.js" type="module"></script>
     <script src="./js/modules/vanilla-tilt.min.js"></script>
+    <script src="./js/modules/showPdf.js" type="module"></script>
+
   </body>
 </html>
