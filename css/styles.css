@@ -288,7 +288,7 @@ a {
 .sobre-mim__descricao-buttons-curriculo:hover,
 .sobre-mim__descricao-buttons-email:hover,
 .projetos__card-button:hover {
-  background-color: #272727;
+  background-color: #03ad34;
   text-shadow: 1px 1px 3px #00bbc5;
 }
 
@@ -491,7 +491,7 @@ a {
 }
 
 .projetos__card span {
-  color: #00d2df;
+  color: #03ad34;
   font-size: 0.9rem;
   display: block;
   margin: 2rem 0;
@@ -502,7 +502,7 @@ a {
 }
 
 .projeto-img {
-  border-left: 5px solid #00d2df;
+  border-left: 5px solid #03ad34;
   width: 100%;
   transition: 0.5s;
 }
@@ -517,7 +517,7 @@ a {
 }
 
 .voltar a {
-  color: #00d2df;
+  color: #03ad34;
   font-weight: bold;
   transition: 0.3s;
 }
@@ -532,7 +532,7 @@ a {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #00d2df;
+  background-color: #03ad34;
   border-radius: 5px;
 }
 
