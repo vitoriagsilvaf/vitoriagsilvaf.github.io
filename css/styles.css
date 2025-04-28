@@ -4,7 +4,7 @@ body {
   margin: 0;
   border: 0;
   background-color: #121212;
-  color: orange;
+  color: #00ff00;
   font-family: "Inter", sans-serif;
   letter-spacing: 1px;
 }
@@ -16,7 +16,7 @@ p {
 }
 
 main {
-  color: #c4c4c4;
+  color: #00ff00;
 }
 
 footer {
@@ -36,13 +36,13 @@ footer p {
 }
 
 footer span {
-  color: #00d2df;
+  color: #00ff00;
   font-weight: bold;
   transition: .4s;
 }
 
 footer span:hover {
-  color: rgba(101, 24, 180, 1)
+  color: #66ff66;
 }
 
 [data-anime="js-scroll"] {
@@ -105,7 +105,7 @@ nav ul li {
 nav ul li::after {
   content: "";
   display: block;
-  border-bottom: 2px solid #00d2df;
+  border-bottom: 2px solid #00ff00;
   margin-top: 5px;
   transform: scaleX(0);
   transition: transform 0.3s ease;
@@ -122,12 +122,12 @@ nav p {
 }
 
 nav p a {
-  color: #00d2df;
+  color: #00ff00;
   transition: 0.3s;
 }
 
 nav p a:hover {
-  color: rgba(147, 88, 247, 1);
+  color: #66ff66;
 }
 
 .principal,
