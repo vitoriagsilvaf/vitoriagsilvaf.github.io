@@ -766,7 +766,7 @@ a {
 .certificados-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    gap: 7px;
     margin-top: 20px;
 }
 /* Fundo interno do modal (onde está o conteúdo) */
