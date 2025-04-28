@@ -276,12 +276,13 @@ a {
   border-radius: 9px;
   background: linear-gradient(
     -45deg,
-    rgba(147, 88, 247, 1),
-    rgba(16, 215, 226, 1)
+    rgba(88, 247, 147, 1), /* Verde claro */
+    rgba(16, 226, 121, 1)  /* Verde mais escuro */
   );
   background-size: 400%;
   animation: move infinite forwards 4s;
 }
+
 
 .principal__botao-linkedin:hover,
 .principal__botao-github:hover,
