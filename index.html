@@ -10,28 +10,31 @@
     <title>Vitória Gabriele</title>
     <link rel="icon" href="">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./css/styles.css" />
-  </head>
-  <body>
-    <header>
-      <nav data-menu="suave">
-        <p><a href="#home">&lsaquo;VG&rsaquo;</a></p>
-        <ul data-menu="list" id="menu">
-          <li><a href="#Início">&lsaquo;Início/&rsaquo;</a></li>
-          <li><a href="#Perfil">&lsaquo;Perfil/&rsaquo;</a></li>
-          <li><a href="#experiencia">&lsaquo;Habilidades/&rsaquo;</a></li>
-          <li><a href="#projetos">&lsaquo;Projetos/&rsaquo;</a></li>
-        </ul>
-      </nav>
-    </header>
+</head>
+<body>
+  <header>
+    <nav data-menu="suave">
+      <p><a href="#home">&lsaquo;VG&rsaquo;</a></p>
+      <ul data-menu="list" id="menu">
+        <li><a href="#Início">&lsaquo;Início/&rsaquo;</a></li>
+        <li><a href="#Perfil">&lsaquo;Perfil/&rsaquo;</a></li>
+        <li><a href="#experiencia">&lsaquo;Habilidades/&rsaquo;</a></li>
+        <li><a href="#projetos">&lsaquo;Projetos/&rsaquo;</a></li>
+      </ul>
+    </nav>
+  </header>
+
 
     <main>
-      <section class="principal" id="home">
+    <section class="principal" id="home" >
         <div class="principal__left">
           <h1>Olá, eu sou</h1>
+            <span class="principal__sentence"></span>
+            <span class="principal__input-cursor"></span>
           <h1>Desenvolvedora</h1>
           <div class="principal__botao">
             <a href="https://www.linkedin.com/in/vitoria-gabriele-s-figueiredo-860bba296" target="_blank">
@@ -49,23 +52,26 @@
           </div>
         </div>
         <div class="principal__right">
-          <img src="/assets/logo.png" alt="Logo" class="logo" data-tilt>
+       <img src="/assets/logo.png" alt="Logo" class="logo" data-tilt>
         </div>
-        <div class="scroll" data-menu="suave"><a href="#sobre"> <p> scroll down </p> <img src="./assets/scroll.png" alt="Setinha indicando para rolar a tela para baixo"></a></div>
+        
+        <div class="scroll" data-menu="suave"><a href="#sobre" > <p> scroll down </p> <img src="./assets/scroll.png" alt="Setinha indicando para rolar a tela para baixo"></a></div>
       </section>
-
       <section class="sobre-mim" id="sobre" data-anime="js-scroll">
         <div class="sobre-mim__foto">
           <img src="" />
         </div>
-        <div class="sobre-mim__descricao">
+        <div class="sobre-mim__descricao" >
           <h1>Perfil</h1>
           <h2>Fortaleza, Ceará</h2>
-          <p style="text-align: justify;">
-            Sou Desenhista com nível técnico em Eletromecânica, atualmente atuo na criação de desenhos técnicos e modelos 3D para diversos projetos industriais. 
-            Em 2023 iniciei o curso de Análise e Desenvolvimento de Sistemas e atualmente me encontro entusiasmada em unir minha base sólida em design mecânico 
-            com a tecnologia e programação.
-          </p>
+         <p style="text-align: justify;">
+           Sou Desenhista com nível técnico em Eletromecânica, atualmente atuo na criação de desenhos técnicos e modelos 3D para diversos projetos industriais.
+           Ao longo da minha trajetória, desenvolvi habilidades com softwares CAD como AutoCAD, FreeCAD, Inventor
+           e Rhinoceros, além de utilizar o Keyshot para renderizações realistas e apresentações profissionais de produtos. 
+           Em 2023 iniciei o curso de Análise e Desenvolvimento de Sistemas e atualmente me encontro entusiasmada em unir 
+           minha base sólida em design mecânico com a tecnologia e programação, buscando soluções inovadoras e funcionais 
+           para os desafios da engenharia moderna. Como também atiar integralmente como desenvolvedora.
+           </p>
           <div class="sobre-mim__descricao-buttons">
             <a href="./assets/" download="">
               <div class="sobre-mim__descricao-buttons-curriculo">
@@ -73,17 +79,20 @@
                 <p>Currículo</p>
               </div>
             </a>
-            <a href="mailto: , vim pelo seu portfólio! :)" target="_blank">
+            <a
+              href="mailto: , vim pelo seu portfólio! :)"
+              target="_blank"
+            >
               <div class="sobre-mim__descricao-buttons-email">
                 <img src="./assets/email.png" alt="" />
                 <p>E-mail</p>
               </div>
             </a>
           </div>
+          
         </div>
       </section>
-
-      <section class="experiencia" id="experiencia" data-anime="js-scroll">
+         <section class="experiencia" id="experiencia" data-anime="js-scroll">
         <h1>Formação acadêmica</h1>
         <div class="experiencia__wrapper">
           <section class="experiencia__lugares">
@@ -93,50 +102,127 @@
               <li>Certificados</li>
             </ul>
           </section>
-
           <div class="experiencia__descricao" data-tab="content">
             <section data-anime="show-right">
               <h2>Técnico em Eletromecânica</h2>
               <p class="experiencia__descricao-local">EEEP Raimundo Célio Rodrigues 2017-2019</p>
-              <p style="text-align: justify;">Foi desenvolvido habilidades para integrar sistemas elétricos e mecânicos, atuando na instalação, manutenção e operação de máquinas e equipamentos industriais...</p>
+               <p style="text-align: justify;">
+                Foi desenvolvido habilidades para integrar sistemas elétricos e mecânicos, atuando na instalação, manutenção e operação de máquinas e equipamentos 
+                industriais. Ao longo do curso, foi aprofundado conhecimentos em elétrica, mecânica, eletrônica e automação, me preparando para enfrentar os desafios 
+                da indústria moderna com inovação e eficiência.</p>
             </section>
             <section data-anime="show-right">
-              <h2>Análise e Desenvolvimento de Sistemas</h2>
+            <h2>Análise e Desenvolvimento de Sistemas</h2>
+            <span>ATUAL</span>
+            <p class="experiencia__descricao-local">Faculdade Descomplica Uniámerica 2023 - o momento</p>
+              <p style="text-align: justify;">
+              Nele estou adquirindo conhecimentos em programação, bancos de dados, engenharia de software 
+              e desenvolvimento de aplicações web e mobile. Meu objetivo é criar soluções eficientes e inovadoras para atender às demandas do mercado de tecnologia, 
+              unindo lógica, criatividade e boas práticas de desenvolvimento.
+            </p>
+          </section>
+      <section data-anime="show-right">
+    <h2>Certificados diversos</h2>
+    <p class="experiencia__descricao-local">Certificados obtidos ao longo da minha jornada:</p>
+    
+    <!-- Container para os Certificados -->
+    <div class="certificados-container">
+        <!-- Certificado 1 -->
+        <div class="certificado-item" onclick="showPdf('frontend')">
+            <h3>Frontend Developer</h3>
+        </div>
+
+        <!-- Certificado 2 -->
+        <div class="certificado-item" onclick="showPdf('fullstack')">
+            <h3>Full Stack Developer</h3>
+        </div>
+    </div>
+
+    <!-- Área de visualização do PDF -->
+    <div id="pdf-viewer">
+        <iframe id="pdf-frontend" src="./assets/FRONTEND DEVELOPER.pdf" width="0" height="0" style="border: none;"></iframe>
+        <iframe id="pdf-fullstack" src="./assets/FULL STACK DEVELOPER.pdf" width="0" height="0" style="border: none;"></iframe>
+    </div>
+</section>
+
+
+        </div>
+      </section>
+      <section class="experiencia" id="experiencia" data-anime="js-scroll">
+        <h1>Experiência/ Formação</h1>
+        <div class="experiencia__wrapper">
+          <section class="experiencia__lugares">
+            <ul data-tab="menu">
+              <li>TEXTO 1</li>
+              <li>TEXTO 2</li>
+              <li>TEXTO 3</li>
+              <li>TEXTO 3</li>
+            </ul>
+          </section>
+          <div class="experiencia__descricao" data-tab="content">
+            <section data-anime="show-right">
+              <h2>TEXTO 4</h2>
               <span>ATUAL</span>
-              <p class="experiencia__descricao-local">Faculdade Descomplica Uniámerica 2023 - o momento</p>
-              <p style="text-align: justify;">Adquirindo conhecimentos em programação, bancos de dados, engenharia de software e desenvolvimento de aplicações web e mobile...</p>
+              <p class="experiencia__descricao-local">TEXTO 5</p>
+              <p>TEXTO 6</p>
             </section>
-
             <section data-anime="show-right">
-              <h2>Certificados diversos</h2>
-              <p class="experiencia__descricao-local">Certificados obtidos ao longo da minha jornada:</p>
-
-              <!-- Container para os Certificados -->
-              <div class="certificados-container">
-                <div class="certificado-item" onclick="showPdf('frontend')">
-                  <h3>Frontend Developer</h3>
-                </div>
-                <div class="certificado-item" onclick="showPdf('fullstack')">
-                  <h3>Full Stack Developer</h3>
-                </div>
+            <h2>FUNÇÃO</h2>
+            <span>ATUAL</span>
+            <p class="experiencia__descricao-local">EMPRESA</p>
+            <p>
+              DESCRIÇÃO
+            </p>
+          </section>
+          <section data-anime="show-right">
+            <h2>FORMAÇÃO</h2>
+            <span>TEMPO</span>
+            <p class="experiencia__descricao-local">LOCAL</p>
+            <p>
+              DESCRIÇÃO
+            </p>
+          </section>
+             <section data-anime="show-right">
+            <h2>FORMAÇÃO</h2>
+            <span>TEMPO</span>
+            <p class="experiencia__descricao-local">LOCAL</p>
+            <p>
+              DESCRIÇÃO
+            </p>
+          </section>
+        </div>
+        </section>
+        </div>
+      </section>
+      <section class="projetos" id="projetos" data-anime="js-scroll">
+        <h1>Projetos</h1>
+        <div class="projetos__wrapper">
+          <section class="projetos__card">
+            <a href="https://gabrielaguaru.github.io/animaisfantasticos/" target="_blank">
+            <img src="./assets/projeto2.png" alt="" class="projeto-img"/>
+          </a>
+            <h2>NOME DO PROJETO</h2>
+            <p>
+              PROJETO 
+            </p>
+            <span>TECNOLOGIAS</span>
+            <a href="" target="_blank">
+              <div class="projetos__card-button">
+                <img src="./assets/link.png" alt="">
+                Visualizar
               </div>
-
-              <!-- Área de visualização do PDF -->
-              <div id="pdf-viewer">
-                <iframe id="pdf-frontend" src="./assets/FRONTEND DEVELOPER.pdf" width="0" height="0" style="border: none;"></iframe>
-                <iframe id="pdf-fullstack" src="./assets/FULL STACK DEVELOPER.pdf" width="0" height="0" style="border: none;"></iframe>
-              </div>
-            </section>
-          </div>
+            </a
+   
+          </section>
         </div>
       </section>
 
       <footer>
-        <p>Desenvolvido por VG</p>
+        <p>Desenvolvido por VG</span></a>
       </footer>
     </main>
 
     <script src="./js/script.js" type="module"></script>
-    <script src="./js/modules/showPdf.js" type="module"></script>
+    <script src="./js/modules/vanilla-tilt.min.js"></script>
   </body>
 </html>
