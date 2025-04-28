@@ -121,7 +121,7 @@
               unindo lógica, criatividade e boas práticas de desenvolvimento.
             </p>
           </section>
-  <section data-anime="show-right">
+ <section data-anime="show-right">
     <h2>Certificados diversos</h2>
     <p class="experiencia__descricao-local">Certificados obtidos ao longo da minha jornada:</p>
     
@@ -130,16 +130,59 @@
         <!-- Certificado 1 -->
         <div class="certificado-item">
             <h3>Frontend Developer</h3>
-            <iframe src="./assets/FRONTEND DEVELOPER.pdf" width="100%" height="300px" style="border: none;"></iframe>
+            <!-- Miniatura do PDF -->
+            <a href="#pdf-modal-frontend" class="pdf-thumbnail" style="display: inline-block; cursor: pointer;">
+                <img src="path_to_pdf_icon.png" alt="Certificado Frontend" width="100">
+            </a>
         </div>
 
         <!-- Certificado 2 -->
         <div class="certificado-item">
             <h3>Full Stack Developer</h3>
-            <iframe src="./assets/FULL STACK DEVELOPER.pdf" width="100%" height="300px" style="border: none;"></iframe>
+            <!-- Miniatura do PDF -->
+            <a href="#pdf-modal-fullstack" class="pdf-thumbnail" style="display: inline-block; cursor: pointer;">
+                <img src="path_to_pdf_icon.png" alt="Certificado Full Stack" width="100">
+            </a>
         </div>
     </div>
 </section>
+
+<!-- Modal para o Certificado Frontend -->
+<div id="pdf-modal-frontend" class="pdf-modal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.7); flex-direction: column; justify-content: center; align-items: center; z-index: 9999;">
+    <div class="pdf-modal-content" style="background: white; padding: 20px; width: 80%; max-width: 800px; position: relative;">
+        <span onclick="this.parentElement.parentElement.style.display='none'" style="position: absolute; top: 10px; right: 10px; font-size: 30px; cursor: pointer;">&times;</span>
+        <h3>Frontend Developer</h3>
+        <iframe src="./assets/FRONTEND DEVELOPER.pdf" width="100%" height="400px" style="border: none;"></iframe>
+    </div>
+</div>
+
+<!-- Modal para o Certificado Full Stack -->
+<div id="pdf-modal-fullstack" class="pdf-modal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.7); flex-direction: column; justify-content: center; align-items: center; z-index: 9999;">
+    <div class="pdf-modal-content" style="background: white; padding: 20px; width: 80%; max-width: 800px; position: relative;">
+        <span onclick="this.parentElement.parentElement.style.display='none'" style="position: absolute; top: 10px; right: 10px; font-size: 30px; cursor: pointer;">&times;</span>
+        <h3>Full Stack Developer</h3>
+        <iframe src="./assets/FULL STACK DEVELOPER.pdf" width="100%" height="400px" style="border: none;"></iframe>
+    </div>
+</div>
+
+<!-- Script Inline para exibir o modal -->
+<script>
+    // Função para abrir o modal ao clicar na miniatura
+    document.querySelectorAll('.pdf-thumbnail').forEach((element) => {
+        element.addEventListener('click', (event) => {
+            const modalId = event.target.closest('a').getAttribute('href');
+            document.querySelector(modalId).style.display = 'flex';
+        });
+    });
+
+    // Fechar o modal ao clicar no '×'
+    document.querySelectorAll('.pdf-modal .close').forEach((element) => {
+        element.addEventListener('click', () => {
+            element.closest('.pdf-modal').style.display = 'none';
+        });
+    });
+</script>
+
 
         </div>
       </section>
@@ -193,7 +236,7 @@
         <h1>Projetos</h1>
         <div class="projetos__wrapper">
           <section class="projetos__card">
-            <a href="https://gabrielaguaru.github.io/animaisfantasticos/" target="_blank">
+            <a href="htaisfantasticos/" target="_blank">
             <img src="./assets/projeto2.png" alt="" class="projeto-img"/>
           </a>
             <h2>NOME DO PROJETO</h2>
