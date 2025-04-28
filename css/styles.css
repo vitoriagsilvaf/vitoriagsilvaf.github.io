@@ -122,7 +122,7 @@ nav p {
 }
 
 nav p a {
-  color: #00d2df;
+  color: #03ad34;
   transition: 0.3s;
 }
 
@@ -208,7 +208,7 @@ a {
 .principal span {
   font-size: 3rem;
   text-transform: uppercase;
-  color: #00d2df;
+  color: #03ad34;
   font-weight: 600;
   letter-spacing: 3px;
 }
@@ -448,7 +448,7 @@ a {
 .experiencia__descricao-local {
   margin: 2rem 0;
   font-size: 0.85rem;
-  color: #00d2df !important;
+  color: #03ad34 !important;
   font-weight: bold;
 }
 
@@ -621,7 +621,7 @@ a {
   .experiencia__lugares ul li.active {
     background-color: #151515;
     border-left: none;
-    border-bottom: 2px solid #00d2df;
+    border-bottom: 2px solid #03ad34;
     font-weight: 600;
   }
 
