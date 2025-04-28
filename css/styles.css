@@ -781,4 +781,7 @@ a {
 .modal-backdrop {
     background-color: rgba(0, 0, 0, 0.8); /* Fundo ainda mais escuro e mais opaco */
 }
+.certificado-item {
+    margin-bottom: 15px;  /* Espaçamento entre os itens */
+}
 
