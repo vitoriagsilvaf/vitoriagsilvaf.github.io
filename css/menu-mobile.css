@@ -5,7 +5,7 @@
   }
 
   nav {
-    background-color: #1c1c1c;
+    background-color: #121212;
     color: white;
   }
 
@@ -18,13 +18,13 @@
   }
 
   [data-menu="button"] {
-    background-color: #1c1c1c;
+    background-color: #121212;
     color: white;
     border: none;
   }
 
   [data-menu="list"] {
-    background-color: #1c1c1c;
+    background-color: #121212;
   }
 
   [data-menu="list"] a {
@@ -38,7 +38,7 @@
   section,
   header,
   footer {
-    background-color: #1a1a1a;
+    background-color: #121212;
   }
 
   h1, h2, h3, p, span, li {
