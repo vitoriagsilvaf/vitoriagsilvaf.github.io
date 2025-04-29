@@ -128,13 +128,15 @@
 
 .sobre-mim__descricao-buttons {
   display: flex;
-  justify-content: center; /* empurra os botões para as extremidades */
-  margin: 0 auto;                 /* centraliza o container */
-  max-width: 90%;               /* define uma largura máxima */                  /* ocupa toda a largura até o máximo */
-  padding: 0 16px;         /* inclui padding na largura */
-  box-sizing: border-box;
+  justify-content: center;
+  gap: 15px;           /* Espaço igual entre os botões */
+  flex-wrap: wrap;
+  margin-top: 2rem;
 }
 
+.sobre-mim__descricao-buttons a {
+  margin: 0;           /* Remove margens desalinhadas */
+}
 
 
 }
