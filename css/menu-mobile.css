@@ -14,7 +14,7 @@
   }
 
   nav a:hover {
-    color: #00d2df;
+    color: #03ad34;
   }
 
   [data-menu="button"] {
@@ -50,7 +50,7 @@
   .projetos__card-button {
     background-color: #292929;
     color: white;
-    border: 1px solid #00d2df;
+    border: 1px solid #03ad34;
     padding: 0.6rem 1rem;
     border-radius: 8px;
     transition: background 0.3s, color 0.3s;
@@ -75,7 +75,7 @@
   .principal__botao a div:hover,
   .sobre-mim__descricao-buttons a div:hover,
   .projetos__card-button:hover {
-    background-color: #00d2df;
+    background-color: #03ad34;
     color: black;
   }
 
