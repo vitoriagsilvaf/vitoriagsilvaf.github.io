@@ -32,7 +32,7 @@
   }
 
   [data-menu="list"] a:hover {
-    background-color: #292929;
+    background-color: #121212;
   }
 
   section,
@@ -48,7 +48,7 @@
   .principal__botao a div,
   .sobre-mim__descricao-buttons a div,
   .projetos__card-button {
-    background-color: #292929;
+    background-color: #121212;
     color: white;
     border: 1px solid #03ad34;
     padding: 0.6rem 1rem;
@@ -123,7 +123,7 @@
   }
 
   .experiencia__lugares ul li:hover {
-    background-color: #292929;
+    background-color: #121212;
   }
 
 .sobre-mim__descricao-buttons {
