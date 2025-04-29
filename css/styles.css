@@ -766,9 +766,10 @@ a {
 
 .certificados-container {
     display: flex;
-    flex-direction: column; /* Sempre em uma coluna */
-    align-items: center; /* Centraliza os itens horizontalmente */
-    width: 100%; /* Garante que ocupe 100% da largura disponível */
+    flex-direction: column; /* Garante que os itens estejam sempre em uma coluna */
+    align-items: center; /* Alinha os itens horizontalmente no centro */
+    width: 100%; /* Ocupa toda a largura disponível */
+    flex-wrap: nowrap; /* Impede que os itens quebrem para uma segunda linha */
 }
 
 .certificado-item {
@@ -781,8 +782,8 @@ a {
     align-items: center; /* Alinha o conteúdo horizontalmente no centro */
     justify-content: center; /* Alinha o conteúdo verticalmente */
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Sombra suave e mais pronunciada */
-    transition: transform 0.3s ease; /* Adiciona animação de suavização */
-    width: 50%; /* Garante que ocupe 100% da largura disponível */
+    transition: transform 0.3s ease; /* Animação suave de transição */
+    width: 100%; /* Garante que o item ocupe 100% da largura disponível */
     max-width: 400px; /* Limita a largura máxima dos itens */
     margin-left: auto;  /* Centraliza os itens horizontalmente */
     margin-right: auto; /* Centraliza os itens horizontalmente */
@@ -826,4 +827,6 @@ a {
     .modal-content {
         padding: 20px; /* Menor padding no modal */
     }
+}
+
 }
