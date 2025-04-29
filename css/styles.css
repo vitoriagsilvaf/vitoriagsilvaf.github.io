@@ -773,6 +773,15 @@ a {
     padding: 0 15px; /* Adicionei um padding nas laterais para espaçamento */
 }
 
+/* Estilo para o container de certificados */
+.certificados-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsivo com colunas flexíveis */
+    gap: 15px; /* Aumentei o espaço entre os itens */
+    margin-top: 20px; /* Aumentei a margem superior */
+    padding: 0 15px; /* Adicionei um padding nas laterais para espaçamento */
+}
+
 /* Estilo para cada item de certificado */
 .certificado-item {
     margin-bottom: 15px;  /* Espaço de 15px entre os itens na coluna */
@@ -780,14 +789,11 @@ a {
     background-color: #2c2c2c; /* Cor de fundo escura */
     border-radius: 10px; /* Bordas mais arredondadas */
     display: flex;
-    flex-direction: column; /* Alinhamento em coluna */
+    flex-direction: column; /* Alterei para coluna, caso precise de alinhamento específico */
     align-items: center; /* Alinha o conteúdo horizontalmente no centro */
     justify-content: center; /* Alinha o conteúdo verticalmente */
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Sombra suave e mais pronunciada */
-    transition: transform 0.3s ease; /* Adiciona animação de suavização */
-    width: 250px; /* Largura fixa para todos os itens */
-    margin-left: auto;  /* Alinha os itens ao centro horizontalmente */
-    margin-right: auto; /* Alinha os itens ao centro horizontalmente */
+    transition: transform 0.3s ease; /* Adicionei uma animação para um efeito suave */
 }
 
 /* Efeito de hover nos itens de certificado */
@@ -795,6 +801,7 @@ a {
     transform: translateY(-5px); /* Efeito de levantamento ao passar o mouse */
     box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3); /* Sombra mais forte no hover */
 }
+
 /* Estilo para o conteúdo do modal */
 .modal-content {
     background-color: #1c1c1c; /* Fundo escuro dentro do modal */
