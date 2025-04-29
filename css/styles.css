@@ -764,38 +764,26 @@ a {
   transform: translateX(-200px); /* Move 200px para a esquerda */
 }
 
-/* Estilo para o container de certificados */
 .certificados-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsivo com colunas flexíveis */
-    gap: 15px; /* Aumentei o espaço entre os itens */
-    margin-top: 20px; /* Aumentei a margem superior */
-    padding: 0 15px; /* Adicionei um padding nas laterais para espaçamento */
+    display: flex;
+    flex-direction: column; /* Sempre em uma coluna */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    width: 100%; /* Garante que ocupe 100% da largura disponível */
 }
 
-/* Estilo para o container de certificados */
-.certificados-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsivo com colunas flexíveis */
-    gap: 15px; /* Aumentei o espaço entre os itens */
-    margin-top: 20px; /* Aumentei a margem superior */
-    padding: 0 15px; /* Adicionei um padding nas laterais para espaçamento */
-}
-
-/* Estilo para cada item de certificado */
 .certificado-item {
-    margin-bottom: 15px;  /* Espaço de 15px entre os itens na coluna */
+    margin-bottom: 15px;  /* Espaço de 15px entre os itens */
     padding: 15px;  /* Aumentei o padding para melhor espaçamento interno */
     background-color: #2c2c2c; /* Cor de fundo escura */
     border-radius: 10px; /* Bordas mais arredondadas */
     display: flex;
-    flex-direction: column; /* Alinha os itens em coluna */
+    flex-direction: column; /* Garante que os itens dentro sejam organizados em coluna */
     align-items: center; /* Alinha o conteúdo horizontalmente no centro */
     justify-content: center; /* Alinha o conteúdo verticalmente */
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Sombra suave e mais pronunciada */
     transition: transform 0.3s ease; /* Adiciona animação de suavização */
     width: 100%; /* Garante que ocupe 100% da largura disponível */
-    max-width: 400px; /* Limita a largura máxima para que todos os itens fiquem consistentes */
+    max-width: 400px; /* Limita a largura máxima dos itens */
     margin-left: auto;  /* Centraliza os itens horizontalmente */
     margin-right: auto; /* Centraliza os itens horizontalmente */
 }
@@ -826,9 +814,8 @@ a {
 /* Responsividade para telas pequenas */
 @media (max-width: 768px) {
     .certificados-container {
-        display: flex;
-        flex-direction: column; /* Em telas pequenas, os certificados serão empilhados em uma única coluna */
-        align-items: center; /* Alinha os itens ao centro */
+        flex-direction: column; /* Sempre em coluna, mesmo em telas pequenas */
+        align-items: center; /* Centraliza os itens */
     }
 
     .certificado-item {
@@ -839,5 +826,4 @@ a {
     .modal-content {
         padding: 20px; /* Menor padding no modal */
     }
-}
 }
