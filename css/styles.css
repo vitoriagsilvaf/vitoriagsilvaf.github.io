@@ -801,7 +801,7 @@ a {
     color: #fff; /* Texto branco */
     border-radius: 10px; /* Bordas arredondadas */
     padding: 25px; /* Aumentei o padding para melhor espaçamento */
-    max-width: 90vw; /* Limita a largura para 90% da tela para dispositivos pequenos */
+    max-width: 70vw; /* Limita a largura para 90% da tela para dispositivos pequenos */
     margin: auto; /* Centraliza o conteúdo */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra mais suave no modal */
 }
