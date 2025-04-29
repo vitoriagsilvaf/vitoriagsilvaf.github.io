@@ -782,7 +782,7 @@ a {
     justify-content: center; /* Alinha o conteúdo verticalmente */
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Sombra suave e mais pronunciada */
     transition: transform 0.3s ease; /* Adiciona animação de suavização */
-    width: 100%; /* Garante que ocupe 100% da largura disponível */
+    width: 50%; /* Garante que ocupe 100% da largura disponível */
     max-width: 400px; /* Limita a largura máxima dos itens */
     margin-left: auto;  /* Centraliza os itens horizontalmente */
     margin-right: auto; /* Centraliza os itens horizontalmente */
