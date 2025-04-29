@@ -54,6 +54,22 @@
     padding: 0.6rem 1rem;
     border-radius: 8px;
     transition: background 0.3s, color 0.3s;
+    position: relative;
+    font-weight: bold;
+    overflow: hidden;
+  }
+
+  .principal__botao a div::before,
+  .sobre-mim__descricao-buttons a div::before,
+  .projetos__card-button::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: -2px;
+    border-radius: 10px;
+    background: linear-gradient(-45deg, rgba(88, 247, 147, 1), rgba(16, 226, 121, 1));
+    background-size: 400%;
+    animation: move 4s infinite;
   }
 
   .principal__botao a div:hover,
@@ -61,6 +77,18 @@
   .projetos__card-button:hover {
     background-color: #00d2df;
     color: black;
+  }
+
+  @keyframes move {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
   }
 
   .projetos__card {
@@ -100,7 +128,7 @@
 
   /* Espaço entre os botões Currículo e E-mail */
   .sobre-mim__descricao-buttons a {
-    margin-right: 5px; /* Ajuste o valor conforme necessário */
+    margin-right: 5px;
     justify-content: center;
   }
 }
