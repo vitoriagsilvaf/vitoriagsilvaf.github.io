@@ -126,8 +126,16 @@
     background-color: #292929;
   }
 
-  .sobre-mim__descricao-buttons a {
-    margin-right: 5px;
-    justify-content: center;
-  }
+ .sobre-mim__descricao-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;           /* Espaço igual entre os botões */
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.sobre-mim__descricao-buttons a {
+  margin: 0;           /* Remove margens desalinhadas */
+}
+
 }
