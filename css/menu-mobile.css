@@ -67,7 +67,7 @@
     z-index: -1;
     inset: -2px;
     border-radius: 10px;
-    background: linear-gradient(-45deg, rgba(88, 247, 147, 1), rgba(16, 226, 121, 1));
+    background: linear-gradient(-45deg, #03ad34, #03ad34); /* Verde fixo */
     background-size: 400%;
     animation: move 4s infinite;
   }
@@ -126,7 +126,6 @@
     background-color: #292929;
   }
 
-  /* Espaço entre os botões Currículo e E-mail */
   .sobre-mim__descricao-buttons a {
     margin-right: 5px;
     justify-content: center;
