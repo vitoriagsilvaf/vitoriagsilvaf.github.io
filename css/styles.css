@@ -58,7 +58,7 @@ footer span:hover {
 
 .projetos,
 .sobre-mim {
-  background-color: #151515;
+  background-color: #121212;
   z-index: 0;
   position: relative;
 }
@@ -81,7 +81,7 @@ nav {
   padding: 0 15%;
   display: flex;
   align-items: center;
-  background-color: #151515;
+  background-color: #121212;
   border-bottom: 2px solid #272727;
   font-weight: bold;
   height: 80px;
