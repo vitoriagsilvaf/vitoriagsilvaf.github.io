@@ -313,14 +313,15 @@ a {
   z-index: -1;
   inset: -2px;
   border-radius: 9px;
-  background:  gradiente linear (
-     -45 graus ,
-     rgba ( 88 ,  247 ,  147 ,  1 ) ,
-     rgba ( 16 ,  226 ,  121 ,  1 )
-   );
+  background: linear-gradient(
+    -45deg,
+    rgba(88, 247, 147, 1),
+    rgba(16, 226, 121, 1)
+  );
   background-size: 400%;
-  animation: move 4s infinite forwards;
+  animation: mover 4s infinite forwards;
 }
+
 
 .principal__botao-linkedin p,
 .principal__botao-github p,
