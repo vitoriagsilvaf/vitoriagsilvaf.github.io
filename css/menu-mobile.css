@@ -128,17 +128,19 @@
 
 .sobre-mim__descricao-buttons {
   display: flex;
-  justify-content: flex-start; /* Alinha os botões à esquerda */
-  gap: 15px; /* Espaço entre os botões */
+  justify-content: space-between; /* empurra os botões para as extremidades */
+  margin: 0 auto;                 /* centraliza o container */
+  max-width: 600px;               /* define uma largura máxima */
+  width: 100%;                    /* ocupa toda a largura até o máximo */
+  padding: 0 20px;                /* espaço igual à esquerda e à direita */
+  box-sizing: border-box;         /* inclui padding na largura */
   margin-top: 2rem;
-  padding: 0 15px; /* Adiciona espaço igual à esquerda e à direita do container */
-  width: 100%; /* Garante que o container ocupe toda a largura disponível */
-  box-sizing: border-box; /* Inclui o padding no cálculo da largura */
 }
 
 .sobre-mim__descricao-buttons a {
-  margin: 0;  /* Remove margens desalinhadas */
+  margin: 0;
 }
+
 
 
 }
