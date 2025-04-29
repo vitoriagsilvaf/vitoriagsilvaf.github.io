@@ -780,14 +780,14 @@ a {
     background-color: #2c2c2c; /* Cor de fundo escura */
     border-radius: 10px; /* Bordas mais arredondadas */
     display: flex;
-    flex-direction: column; /* Alterei para coluna, caso precise de alinhamento específico */
+    flex-direction: column; /* Alinhamento em coluna */
     align-items: center; /* Alinha o conteúdo horizontalmente no centro */
     justify-content: center; /* Alinha o conteúdo verticalmente */
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Sombra suave e mais pronunciada */
-    transition: transform 0.3s ease; /* Adicionei uma animação para um efeito suave */
-    min-height: 120px; /* Altura mínima para todos os itens */
-    height: auto; /* Ajuste para que o conteúdo ainda possa se expandir quando necessário */
-    width: 100%; /* Garantir que ocupe toda a largura disponível */
+    transition: transform 0.3s ease; /* Adiciona animação de suavização */
+    width: 250px; /* Largura fixa para todos os itens */
+    margin-left: auto;  /* Alinha os itens ao centro horizontalmente */
+    margin-right: auto; /* Alinha os itens ao centro horizontalmente */
 }
 
 /* Efeito de hover nos itens de certificado */
@@ -795,7 +795,6 @@ a {
     transform: translateY(-5px); /* Efeito de levantamento ao passar o mouse */
     box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3); /* Sombra mais forte no hover */
 }
-
 /* Estilo para o conteúdo do modal */
 .modal-content {
     background-color: #1c1c1c; /* Fundo escuro dentro do modal */
@@ -827,8 +826,4 @@ a {
     .modal-content {
         padding: 20px; /* Menor padding no modal */
     }
-  .pdf-thumbnail img {
-    width: 20px;
-    margin-right: 8px;
-}
 }
